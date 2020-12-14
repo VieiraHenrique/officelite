@@ -13,6 +13,7 @@
 		@media screen and (min-width: 1025px) {
 			max-width: 111rem;
 			margin: 0 auto;
+			padding: 0 2.5rem;
 			transform: translateY(8rem);
 		}
 		img {
@@ -41,7 +42,7 @@
 			grid-template-areas: 'text img';
 			gap: 5rem;
 			align-items: center;
-			padding-top: 180px;
+			height: 100vh;
 		}
 	}
 
@@ -101,7 +102,7 @@
 				display: block;
 				object-fit: cover;
 				width: 530px;
-				transform: translate(150px, -50px);
+				transform: translate(50px, -70px);
 			}
 		}
 	}
