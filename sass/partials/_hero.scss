@@ -1,0 +1,51 @@
+.hero {
+	padding-bottom: 10rem;
+
+	&__logo {
+		img {
+			width: 155px;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			top: 46px;
+		}
+	}
+
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			'img'
+			'text';
+	}
+
+	&__text {
+		margin-top: -30px;
+		grid-area: text;
+		text-align: center;
+		h1 {
+			color: #333950;
+			font-weight: 700;
+			font-size: 4rem;
+		}
+
+		p {
+			font-weight: 400;
+			color: #747b95;
+			margin: 3rem 0 2.5rem;
+		}
+	}
+
+	&__img {
+		grid-area: img;
+		margin: 0 -2.5rem;
+		height: 40rem;
+		height: 458px;
+		background: url(/assets/home/bg-pattern-header.svg),
+			url(/assets/home/illustration-charts.svg);
+		background-position: top -165px center, bottom 70px center;
+		background-repeat: no-repeat;
+		background-size: 458px, 200px;
+		order: 1;
+	}
+}

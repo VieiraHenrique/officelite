@@ -1,0 +1,90 @@
+.cards {
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.card {
+		background: #fff;
+		border-radius: 1rem;
+		text-align: center;
+		padding: 4.5rem 0;
+	}
+
+	.modality {
+		font-family: Kumbh Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 28px;
+		color: #333950;
+	}
+
+	.price {
+		font-family: Kumbh Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 56px;
+		line-height: 64px;
+		color: #333950;
+		margin: 5rem 0 3rem;
+	}
+
+	.specificity {
+		font-family: Kumbh Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 28px;
+		color: #333950;
+	}
+
+	.right {
+		margin-top: 7.5rem;
+	}
+
+	.card_item {
+		font-family: Kumbh Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 28px;
+		text-align: center;
+		color: #747b95;
+	}
+
+	.sep {
+		margin: 3rem 0;
+	}
+
+	.btn {
+		margin-top: 4rem;
+	}
+
+	.cards__basic {
+		margin-bottom: 3rem;
+	}
+
+	.cards__pro {
+		margin-bottom: 3rem;
+		background: #5175ff;
+		background-image: url(/assets/home/bg-pattern-pricing.svg);
+		background-position: center bottom 10px;
+		background-size: 110rem;
+		background-repeat: no-repeat;
+		color: #fff;
+
+		.modality {
+			color: #fff;
+		}
+		.price {
+			color: #fff;
+		}
+		.specificity {
+			color: #fff;
+		}
+		.card_item {
+			color: rgba($color: #fff, $alpha: 0.75);
+		}
+	}
+}
