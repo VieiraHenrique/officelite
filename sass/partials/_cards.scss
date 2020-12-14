@@ -1,7 +1,16 @@
 .cards {
+	@media screen and (min-width: 1025px) {
+		margin-top: -260px;
+	}
+
 	.wrapper {
 		display: grid;
 		grid-template-columns: 1fr;
+
+		@media screen and (min-width: 1025px) {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 3rem;
+		}
 	}
 
 	.card {
@@ -9,6 +18,7 @@
 		border-radius: 1rem;
 		text-align: center;
 		padding: 4.5rem 0;
+		/* width: 350px; */
 	}
 
 	.modality {
@@ -40,7 +50,7 @@
 	}
 
 	.right {
-		margin-top: 7.5rem;
+		margin-top: 5rem;
 	}
 
 	.card_item {
@@ -54,7 +64,7 @@
 	}
 
 	.sep {
-		margin: 3rem 0;
+		margin: 2rem 0;
 	}
 
 	.btn {
@@ -62,6 +72,9 @@
 	}
 
 	.cards__basic {
+		margin-bottom: 3rem;
+	}
+	.cards__ultimate {
 		margin-bottom: 3rem;
 	}
 

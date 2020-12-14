@@ -1,13 +1,31 @@
 .hero {
 	padding-bottom: 10rem;
 
+	@media screen and (min-width: 1025px) {
+		min-height: 1180px;
+		background: url(https://vieirahenrique.github.io/officelite/assets/home/bg-pattern-header.svg);
+		/* background-size: cover; */
+		background-repeat: no-repeat;
+		background-position: top -40rem right -20rem;
+	}
+
 	&__logo {
+		@media screen and (min-width: 1025px) {
+			max-width: 111rem;
+			margin: 0 auto;
+			transform: translateY(8rem);
+		}
 		img {
 			width: 155px;
 			position: absolute;
 			left: 50%;
 			transform: translateX(-50%);
 			top: 46px;
+
+			@media screen and (min-width: 1025px) {
+				position: static;
+				transform: translateX(0);
+			}
 		}
 	}
 
@@ -17,6 +35,14 @@
 		grid-template-areas:
 			'img'
 			'text';
+
+		@media screen and (min-width: 1025px) {
+			grid-template-columns: 1fr 1fr;
+			grid-template-areas: 'text img';
+			gap: 5rem;
+			align-items: center;
+			padding-top: 180px;
+		}
 	}
 
 	&__text {
@@ -27,12 +53,28 @@
 			color: #333950;
 			font-weight: 700;
 			font-size: 4rem;
+
+			@media screen and (min-width: 1025px) {
+				max-width: 55rem;
+				font-size: 5.6rem;
+			}
 		}
 
 		p {
+			max-width: 48rem;
 			font-weight: 400;
 			color: #747b95;
 			margin: 3rem 0 2.5rem;
+
+			@media screen and (min-width: 1025px) {
+				max-width: 54rem;
+				font-size: 1.8rem;
+			}
+		}
+
+		@media screen and (min-width: 1025px) {
+			margin: 0;
+			text-align: left;
 		}
 	}
 
@@ -47,5 +89,20 @@
 		background-repeat: no-repeat;
 		background-size: 458px, 200px;
 		order: 1;
+
+		@media screen and (min-width: 1025px) {
+			background: none;
+		}
+
+		img {
+			display: none;
+
+			@media screen and (min-width: 1025px) {
+				display: block;
+				object-fit: cover;
+				width: 530px;
+				transform: translate(150px, -50px);
+			}
+		}
 	}
 }

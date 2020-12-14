@@ -4,9 +4,17 @@
 	background: #25293a;
 	background-image: url(https://vieirahenrique.github.io/officelite/assets/home/bg-pattern-footer.svg);
 	background-position: center bottom -100px;
+	background-repeat: no-repeat;
 	background-size: 1200px;
 	height: 1400px;
 	margin-top: -950px;
+
+	@media screen and (min-width: 1025px) {
+		margin-top: -330px;
+		height: 605px;
+		background-position: right 80px top -500px;
+		background-size: 2000px;
+	}
 
 	.wrapper {
 		height: 100%;
@@ -15,10 +23,20 @@
 		flex-direction: column;
 		justify-content: flex-end;
 		align-items: center;
+
+		@media screen and (min-width: 1025px) {
+			padding-top: 400px;
+			flex-direction: row;
+			justify-content: space-between;
+		}
 	}
 
 	&__counter {
 		text-align: center;
+
+		@media screen and (min-width: 1025px) {
+			text-align: left;
+		}
 		&--title {
 			font-weight: bold;
 			line-height: 48px;
@@ -51,6 +69,10 @@
 					color: #fff;
 					font-size: 3.2rem;
 					font-weight: bold;
+
+					@media screen and (min-width: 1025px) {
+						font-size: 5.6rem;
+					}
 				}
 				&--time {
 					color: rgba($color: #fff, $alpha: 0.5);
