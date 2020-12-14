@@ -1,4 +1,7 @@
 .cards {
+	@media screen and (min-width: 767px) {
+		margin-top: -200px;
+	}
 	@media screen and (min-width: 1025px) {
 		margin-top: -200px;
 	}
@@ -19,6 +22,15 @@
 		text-align: center;
 		padding: 4.5rem 0;
 		/* width: 350px; */
+
+		@media screen and (min-width: 767px) {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+		@media screen and (min-width: 1025px) {
+			display: block;
+		}
 	}
 
 	.modality {
