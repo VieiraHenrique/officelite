@@ -1,6 +1,6 @@
 .coming {
-	position: relative;
-	z-index: -10;
+	/* position: relative;
+	z-index: -1; */
 	background: #25293a;
 	background-image: url(https://vieirahenrique.github.io/officelite/assets/home/bg-pattern-footer.svg);
 	background-position: center bottom -100px;
@@ -82,5 +82,8 @@
 	}
 
 	&__btn {
+		position: relative;
+		z-index: 20;
+		cursor: pointer;
 	}
 }
